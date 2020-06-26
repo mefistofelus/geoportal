@@ -13,31 +13,79 @@
   </head>
 
   <body class="page-wrapper">
-    <header class="header">
+
+    <header class="header fixed-top">
       <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <a class="navbar-brand" href="#">Navbar w/ text</a>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light d-flex align-items-center">
+          <a class="navbar-brand" href="#">
+            <img src="img/logo.svg" alt="Geoportal" class="header__logo">
+            Geoportal</a>
+
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
             aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarText">
-            <ul class="navbar-nav mr-auto">
+
+          <div class="collapse navbar-collapse d-flex flex-column align-items-end" id="navbarText">
+
+            <div class="header__info">
+              <ul class="info__list d-flex align-items-center">
+                <!-- phone -->
+                <li class="list__item d-flex align-items-center">
+                  <img src="img/icon-phone.svg" alt="" class="info__icon">
+                  <a href="tel:8 (066) 222-33-44" class="info__link">8 (066) 222-33-44</a>
+                </li>
+                <!-- hours -->
+                <li class="list__item d-flex align-items-center">
+                  <img src="img/icon-clock.svg" alt="" class="info__icon">
+                  <span class="info__link">Пн-Пт 9:00-18:00</span>
+                </li>
+                <!-- e-mail -->
+                <li class="list__item d-flex align-items-center">
+                  <img src="img/icon-letter.svg" alt="" class="info__icon">
+                  <a href="mailto:order@test.ua" class="info__link">order@test.ua</a>
+                </li>
+                <!-- location -->
+                <li class="list__item d-flex align-items-center">
+                  <img src="img/icon-map-marker.svg" alt="" class="info__icon">
+                  <a href="#" class="info__link">Київ</a>
+                </li>
+              </ul>
+            </div>
+
+            <ul class="navbar-nav ml-auto">
               <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="#">ГОЛОВНА</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
+                <a class="nav-link" href="#">ПОСЛУГИ</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
+                <a class="nav-link" href="#">ПРО КОМПАНІЮ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">КОНТАКТИ</a>
               </li>
             </ul>
             <span class="navbar-text">
-              Navbar text with an inline element
+              <!-- Navbar text with an inline element -->
             </span>
           </div>
         </nav>
+
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="jumbotron">
+              <h1 class="display-4">Ex ad ullamco dolore aliqua duis excepteur ipsum </h1>
+              <p class="lead">Ipsum laboris laboris elit sint dolore proident ipsum. Eiusmod nisi labore cillum ad
+                consectetur. </p>
+            </div>
+            <button type="button" class="btn btn-primary">Читати далі</button>
+          </div>
+        </div>
+
+
       </div>
     </header>
 

@@ -1,6 +1,6 @@
 // динамически изменяемый цвет текста
-@function set-text-color($bg-color) {
-  @if(lightness($bg-color) > 40) {
+@function set-text-color($primary-bgcolor) {
+  @if(lightness($primary-bgcolor) > 40) {
     @return #292929;
   }
 

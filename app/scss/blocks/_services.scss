@@ -1,0 +1,108 @@
+.section {
+  padding: rem(135) 0;
+
+  &-services {
+    background-color: $section-grey;
+
+  }
+
+  .section__heading {
+    margin-bottom: rem(70);
+    max-width: rem(435);
+
+    .section__suptitle {
+      font-weight: 900;
+      font-size: rem(24);
+      line-height: rem(33);
+      color: $heading-color;
+    }
+
+    .section__title {
+      font-family: $title-font;
+      font-weight: 700;
+      font-size: rem(48);
+      line-height: 144.55%;
+      color: $title-color;
+    }
+
+    .section__title--colored {
+      display: block;
+      color: $primary-accent;
+    }
+
+    .section__text {
+      font-weight: 300;
+      font-size: rem(18);
+      line-height: rem(25);
+      color: $font-dark;
+    }
+  }
+
+
+  &__content {
+    margin-bottom: rem(20);
+  }
+
+  .card {
+    margin-bottom: rem(30);
+
+    &::before {
+      position: absolute;
+      content: '';
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: block;
+      z-index: 10;
+      transition: $transition;
+    }
+
+    &:hover::before {
+      background-color: rgba(0, 95, 163, 0.65);
+    }
+
+    &::after {
+      position: absolute;
+      content: '';
+      top: 50%;
+      left: 50%;
+      width: 100%;
+      height: 100%;
+      transform: translate(-50%, -50%);
+      background-image: url(../../img/hand.svg);
+      background-repeat: no-repeat;
+      background-position: center center;
+      display: block;
+      opacity: 0;
+      z-index: 20;
+      transition: $transition;
+    }
+
+    &:hover::after {
+      opacity: 1;
+    }
+
+    .card-body {
+      margin: 0 auto;
+      width: 100%;
+      max-width: rem(270);
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 0;
+      color: $font-light;
+      z-index: 30;
+    }
+
+    .card-title {
+      font-family: $text-font;
+      font-weight: 900;
+      font-size: rem(24);
+      line-height: rem(30);
+      min-height: rem(66);
+      text-align: center;
+      color: $font-light;
+    }
+  }
+}

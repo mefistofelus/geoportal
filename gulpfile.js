@@ -63,12 +63,13 @@ const scss = require('gulp-sass');
 const cleancss = require('gulp-clean-css');
 const concat = require('gulp-concat');
 const browserSync = require('browser-sync').create();
+const rigger = require('gulp-rigger');
 const uglify = require('gulp-uglify-es').default;
 const autoprefixer = require('gulp-autoprefixer');
 const gcmq = require('gulp-group-css-media-queries');
 const imagemin = require('gulp-imagemin');
 const webp = require('gulp-webp');
-const webphtml = require('gulp-webp-html');
+// const webphtml = require('gulp-webp-html');
 const ttf2woff = require('gulp-ttf2woff');
 const ttf2woff2 = require('gulp-ttf2woff2');
 const fonter = require('gulp-fonter');
@@ -89,7 +90,7 @@ function browsersync() {
 
 function html() {
 	return src(paths.html.src)
-		.pipe(webphtml())
+		// .pipe(webphtml())
 		.pipe(dest(paths.html.dest))
 		.pipe(browserSync.stream())
 }
@@ -102,6 +103,7 @@ function scripts() {
 				message: 'Error: <%= error.message %>'
 			})
 		}))
+		.pipe(rigger())
 		.pipe(concat(paths.jsOutputName))
 		.pipe(uglify())
 		.pipe(dest(paths.scripts.dest))

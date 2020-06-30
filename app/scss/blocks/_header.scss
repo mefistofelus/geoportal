@@ -1,7 +1,5 @@
 .header {
   padding: 10px 0;
-  height: 780px;
-  background-image: url(../../img/slider-img.jpg);
 
   &__logo {
     margin-right: 10px;
@@ -19,14 +17,6 @@
       color: $primary-light;
     }
   }
-
-  // .navbar-light .navbar-nav .nav-item {
-  //   margin-left: 3.7em;
-
-  //   &:first-child {
-  //     margin-left: 0;
-  //   }
-  // }
 
   .nav-item {
     margin-left: 2.9rem;
@@ -77,23 +67,6 @@
     }
   }
 
-  .jumbotron {
-    padding-left: 0;
-    background-color: transparent;
-    color: $font-light;
 
-    .display-4 {
-      font-family: $title-font;
-      font-weight: 700;
-      font-size: rem(48);
-      letter-spacing: 0.02em;
-    }
 
-    .lead {
-      font-family: $text-font;
-      font-weight: 500;
-      font-size: rem(24);
-      letter-spacing: 0.02em;
-    }
-  }
 }

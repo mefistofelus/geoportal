@@ -1,5 +1,7 @@
 .header {
   padding: 10px 0;
+  color: $primary-light;
+  transition: $transition;
 
   &__logo {
     margin-right: 10px;
@@ -44,7 +46,7 @@
   .header__info {
 
     &>ul {
-      margin: 0;
+      margin-bottom: rem(10);
     }
 
     .list__item {

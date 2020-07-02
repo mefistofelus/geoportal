@@ -1,6 +1,7 @@
 //= jquery-1.11.0.min.js
 //= ../../node_modules/slick-carousel/slick/slick.min.js
 //= ../../node_modules/bootstrap/js/dist/util.js
+//= ../../node_modules/bootstrap/js/dist/collapse.js
 //= ../../node_modules/bootstrap/js/dist/tab.js
 
 $(".slider").slick({
@@ -18,4 +19,11 @@ $(function () {
     $(this).tab('show')
   })
 })
+
+//On Scroll Functionality
+$(window).scroll(() => {
+  var windowTop = $(window).scrollTop();
+  windowTop > 300 ? $('nav').addClass('navShadow') : $('nav').removeClass('navShadow');
+  windowTop > 300 ? $('.header').css('background-color:', '#ffffff') : $('.header').css('background-color:', '#ffffff');
+});
 

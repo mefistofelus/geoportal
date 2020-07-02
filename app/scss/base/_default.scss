@@ -8,6 +8,7 @@ html {
 *:before,
 *:after {
   box-sizing: inherit;
+  outline: none;
 }
 
 input,
@@ -23,8 +24,16 @@ textarea {
   }
 }
 
+ol,
+ul,
+li,
+p {
+  margin: 0;
+  padding: 0;
+}
+
 ::placeholder {
-  color: #666;
+  color: $heading-color;
 }
 
 ::selection {

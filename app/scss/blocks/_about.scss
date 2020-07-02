@@ -127,6 +127,7 @@
       font-size: rem(48);
       line-height: 144.55%;
       text-align: center;
+      color: $font-light;
     }
 
     .tab-pane__content {
@@ -135,6 +136,7 @@
 
     .tab-pane__text {
       margin: 0;
+      color: $font-light;
     }
   }
 }
